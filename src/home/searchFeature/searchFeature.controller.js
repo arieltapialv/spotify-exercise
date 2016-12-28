@@ -11,14 +11,9 @@ class searchFeatureController {
   search(param){
     this.AlbumItemService.getAlbumsByName(param).then((response) =>
     {
-      this.albums = response.data;
-      console.log('response', this.albums);
-
+      this.albums = response.data.albums.items;
     }
-
-
     );
-
   }
 
 }
