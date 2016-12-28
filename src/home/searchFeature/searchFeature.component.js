@@ -1,8 +1,8 @@
-// import controller from './home.controller';
+import controller from './searchFeature.controller';
 import template from './searchFeature.template.html';
 
 const component = {
-  // controller,
+  controller,
   template
 };
 

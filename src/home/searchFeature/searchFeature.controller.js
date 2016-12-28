@@ -1,4 +1,4 @@
-class albumItemController {
+class searchFeatureController {
   constructor( $rootScope, AlbumItemService) {
     'ngInject';
     this.AlbumItemService = AlbumItemService;
@@ -10,11 +10,17 @@ class albumItemController {
 
   search(param){
     this.AlbumItemService.getAlbumsByName(param).then((response) =>
-      this.albums = response.data);
+    {
+      this.albums = response.data;
+      console.log('response', this.albums);
 
-    console.log(this.albums);
+    }
+
+
+    );
+
   }
 
 }
 
-export default albumItemController;
+export default searchFeatureController;

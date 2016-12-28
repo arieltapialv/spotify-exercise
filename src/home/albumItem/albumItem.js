@@ -6,7 +6,7 @@ import service from './albumItem.service';
 
 const albumItem = angular
   .module('albumItem', [uiRouter])
-  .service('albumItemService', service)
+  .service('AlbumItemService', service)
   .component('albumItem', component)
   .name;
 
