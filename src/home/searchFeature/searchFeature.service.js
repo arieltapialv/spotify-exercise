@@ -1,4 +1,4 @@
-class AlbumItemService {
+class SearchFeatureService {
   constructor($http) {
     'ngInject;';
     this.$http = $http;
@@ -9,4 +9,4 @@ class AlbumItemService {
     });
   }
 }
-export default AlbumItemService;
+export default SearchFeatureService;

@@ -1,7 +1,7 @@
 class searchFeatureController {
-  constructor( $rootScope, AlbumItemService) {
+  constructor( $rootScope, SearchFeatureService) {
     'ngInject';
-    this.AlbumItemService = AlbumItemService;
+    this.SearchFeatureService = SearchFeatureService;
   }
 
   $onInit() {
@@ -15,7 +15,6 @@ class searchFeatureController {
     }
     );
   }
-
 }
 
 export default searchFeatureController;
