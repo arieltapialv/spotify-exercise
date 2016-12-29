@@ -5,14 +5,17 @@ class albumItemController {
 
   }
   $onInit(){
-    console.log(this.albumData);
     this.album = this.albumData;
   }
+
   viewComments(id){
-    console.log('hi');
-    this.albumItemService.getCommentById(id).then((res) => {
-      console.log('res',res);
+    this.showComment({
+      $event:{albumid: id}
     });
+    /*
+    this.albumItemService.getCommentById(id).then((res) => {
+      this.commentRes = res;
+    });*/
   }
 }
 

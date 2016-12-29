@@ -2,5 +2,6 @@
   <search-feature on-search="$ctrl.showresults($event)"></search-feature>
 </header>
 <div class="" ng-repeat="album in $ctrl.albums">
-  <album-item album-data="album" ></album-item>
+  <album-item album-data="album" show-comment="$ctrl.showComment($event)" ></album-item>
+  <comment-feature album-id = "album.id" comment-display="$ctrl.comment" ></comment-feature>
 </div>

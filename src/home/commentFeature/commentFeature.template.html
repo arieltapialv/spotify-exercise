@@ -1,0 +1,12 @@
+<div class="comment">
+  <div class="show-comments" ng-show="commentDisplay">
+    {{}}
+  </div>
+  <div class="create-comment">
+    <form class="">
+      <input type="email" ng-model='comment.email' placeholder="email@email">
+      <textarea ng-model="comment.text" placeholder="Comment" rows="8" cols="40"></textarea>
+      <button  ng-click="$ctrl.sendComment(comment)">Add</button>
+    </form>
+  </div>
+</div>

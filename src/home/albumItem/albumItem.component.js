@@ -5,7 +5,8 @@ const component = {
   controller,
   template,
   bindings: {
-    albumData: '<'
+    albumData: '<',
+    showComment:'&'
   }
 };
 
