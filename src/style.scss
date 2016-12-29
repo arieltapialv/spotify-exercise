@@ -1,5 +1,7 @@
 // Import from npm
 @import 'normalize.css';
+@import 'home/searchFeature/style';
+@import 'home/albumItem/style';
 
 $background-color: #fff;
 
@@ -11,24 +13,4 @@ body {
     position: relative;
     width: 100vw;
   }
-}
-
-
-//searchFeature
-.header{
-  background-color: #282828;
-  padding:10px;
-  .searchFeature{
-    text-align: center;
-  input{
-    border-radius: 5px;
-    width: 35%;
-  }
-  }
-}
-// albumItem
-
-.albumItem{
-  padding-left: 30px;
-  padding-right: 30px;
 }

@@ -3,7 +3,10 @@ import template from './searchFeature.template.html';
 
 const component = {
   controller,
-  template
+  template,
+  bindings: {
+    onSearch: '&'
+  }
 };
 
 export default component;

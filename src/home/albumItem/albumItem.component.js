@@ -3,7 +3,10 @@ import controller from './albumItem.controller.js';
 
 const component = {
   controller,
-  template
+  template,
+  bindings: {
+    albumData: '<'
+  }
 };
 
 export default component;

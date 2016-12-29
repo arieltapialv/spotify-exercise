@@ -9,11 +9,15 @@ class searchFeatureController {
   }
 
   search(param){
-    this.AlbumItemService.getAlbumsByName(param).then((response) =>
+    this.SearchFeatureService.getAlbumsByName(param).then((response) =>
     {
       this.albums = response.data.albums.items;
-    }
-    );
+
+      this.onSearch({
+        $event:{albums: this.albums}
+      });
+
+    });
   }
 }
 

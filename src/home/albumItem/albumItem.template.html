@@ -1,9 +1,12 @@
 <div class="albumItem" >
   <div class="img">
-    <img src="" alt="" />
+    <img ng-src="{{$ctrl.album.images[0].url}}" alt="" />
   </div>
-  <div class="">
-    <h3>Author</h3>
-    <h1>Title</h1>
+  <div class="description">
+    <h3>{{$ctrl.album.artists[0].name}}</h3>
+    <h1>{{$ctrl.album.name}}</h1>
+    <div class="comment">
+      <button type="button" ng-click="$ctrl.viewComments($ctrl.album.id)"> view comments</button>
+    </div>
   </div>
 </div>

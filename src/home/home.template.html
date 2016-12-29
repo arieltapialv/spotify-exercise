@@ -1,4 +1,6 @@
 <header class="header">
-  <search-feature></search-feature>
+  <search-feature on-search="$ctrl.showresults($event)"></search-feature>
 </header>
-<album-item></album-item>
+<div class="" ng-repeat="album in $ctrl.albums">
+  <album-item album-data="album" ></album-item>
+</div>
